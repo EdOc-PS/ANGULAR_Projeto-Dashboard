@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './menu-nav.component.html',
-  styleUrl: './menu-nav.component.css'
+  styleUrls: ['./menu-nav.component.css', './menu-nav.media.component.css']
 })
 export class MenuNavComponent {
 

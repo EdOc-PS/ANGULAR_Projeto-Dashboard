@@ -1,0 +1,26 @@
+@media screen and (min-width: 992px) {
+  .body_big-card{
+
+  }
+  .body_big-card .img_big_card{
+    width: 550px;
+
+  }
+  .desc-game_big-card{
+    gap: 15px;
+    padding: 0 1.5rem;
+  }
+
+  .desc-game_big-card h1{
+    width: 200px;
+    font-size: 24px;
+  }
+  .desc-game_big-card p{
+    width: 300px;
+    font-size: 14px;
+  }
+  .desc-game_big-card button{
+    cursor: pointer;
+    width: 50%;
+  }
+}

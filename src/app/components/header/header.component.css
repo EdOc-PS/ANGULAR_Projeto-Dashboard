@@ -1,0 +1,56 @@
+header.contaiener_header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem .6rem;
+  background-color: #151515;
+}
+
+.input-name_header {
+  border-radius: 15px;
+  padding: 8px 12px;
+  border: 1px solid #363636;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .5rem;
+
+}
+
+header.contaiener_header .input-name_header input {
+  border: none;
+  color: #666666;
+  background-color: transparent;
+}
+
+.input-name_header input:focus-visible {
+  outline: none;
+}
+
+.input-name_header input::placeholder {
+  color: #666666
+}
+
+.input-name_header i {
+  color: #666666;
+  font-size: 16px;
+}
+
+.group-settings_header {
+  gap: 15px;
+}
+
+.icons_header i {
+  padding: .7rem;
+  color: #666666;
+  background-color: #363636;
+  font-size: 18px;
+  border-radius: 15px;
+}
+.icons_header img{
+  width: 40.38px;
+  height: auto;
+  border-radius: 15px;
+}

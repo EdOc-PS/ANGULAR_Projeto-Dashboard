@@ -1,0 +1,7 @@
+@media screen and (min-width: 992px) {
+  section.content_main {
+    right: 0%;
+    padding: 2rem 3rem;
+    width: calc(100% - 75px);
+  }
+}
