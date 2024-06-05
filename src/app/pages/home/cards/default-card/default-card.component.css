@@ -1,0 +1,26 @@
+.body_default-card {
+
+}
+
+.img_default-card {
+  width: 160px;
+  border-radius: 15px;
+}
+
+.desc-game_default-card{
+  padding: .25rem .35rem;
+}
+
+.desc-game_default-card h1 {
+  margin: 2px 0 8px 0;
+  font-size: 14px;
+  color: #b6b6b6;
+}
+
+.another-info-game_default-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 10px;
+
+}

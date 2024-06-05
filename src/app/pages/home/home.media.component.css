@@ -1,0 +1,15 @@
+@media screen and (min-width: 992px) {
+  .content-trending_home {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .control-small-trending_home {
+    background-color: transparent;
+    padding: .5rem;
+    flex-direction: column;
+  }
+  .container-default-card_home{
+    width: 45vw;
+  }
+}

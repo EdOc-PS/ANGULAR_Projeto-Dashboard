@@ -1,0 +1,32 @@
+@media screen and (min-width: 992px) {
+.body_small-card{
+
+   position: relative;
+   display: inline-flex;
+   padding: .35rem;
+   border-radius: 15px;
+   cursor: pointer;
+
+}
+.img_small-card{
+  width: auto;
+  height: 80px;
+  z-index: 1;
+}
+.desc-game_small-card{
+  width: 140px;
+  padding: .25rem .6rem;
+  z-index: 1;
+
+}
+.desc-game_small-card h1{
+  font-size: 14px;
+
+}
+.desc-game_small-card span{
+  font-size: 14px;
+
+
+}
+
+}

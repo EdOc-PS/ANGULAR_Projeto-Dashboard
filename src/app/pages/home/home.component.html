@@ -2,6 +2,36 @@
   <h1>Trending</h1>
 </div>
 <br>
+
 <div class="content-trending_home">
   <big-card></big-card>
+
+  <ng-container *ngIf="isScreenSmall() else bigScreen">
+    <div class="control-small-trending_home">
+      <small-card></small-card>
+      <small-card></small-card>
+
+    </div>
+  </ng-container>
+
+  <ng-template #bigScreen>
+    <div class="control-small-trending_home">
+      <small-card></small-card>
+      <small-card></small-card>
+      <small-card></small-card>
+    </div>
+  </ng-template>
+
+</div>
+
+<div class="content-trending-more_home">
+  <div class="content-subtitle_home">
+    <h4>More</h4>
+  </div>
+  <div class="container-default-card_home">
+    <default-card></default-card>
+    <default-card></default-card>
+    <default-card></default-card>
+    <default-card></default-card>
+  </div>
 </div>
