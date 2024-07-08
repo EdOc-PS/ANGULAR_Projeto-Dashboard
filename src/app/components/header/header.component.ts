@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { MenuNavComponent } from '../menu-nav/menu-nav.component';
+
 
 @Component({
   selector: 'home-header',
   standalone: true,
-  imports: [],
+  imports: [MatDialogModule],
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css', './header.media.component.css']
+  styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  constructor(public dialog: MatDialog) { }
 
+  abrirPopUp() {
+    this.dialog.open(MenuNavComponent)
+  }
 }

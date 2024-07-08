@@ -1,56 +1,115 @@
 header.contaiener_header {
   position: fixed;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: .8rem .6rem;
-  background-color: #151515;
+  background-color: transparent;
+  z-index: 1;
 }
 
 .input-name_header {
   border-radius: 15px;
-  padding: 8px 12px;
-  border: 1px solid #363636;
+  padding: 10px 12px;
+  width: 100%;
   display: flex;
+  background-color: var(--black_tree);
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
 
 }
 
-header.contaiener_header .input-name_header input {
-  border: none;
-  color: #666666;
-  background-color: transparent;
-}
-
-.input-name_header input:focus-visible {
-  outline: none;
-}
-
-.input-name_header input::placeholder {
-  color: #666666
-}
-
 .input-name_header i {
-  color: #666666;
+  color: var(--color_font);
   font-size: 16px;
 }
 
+.icons_header:first-child i{
+  font-size: 10px;
+  color: #FFF;
+  background-color: transparent;
+}
+
+  .icons_header button{
+    background-color: transparent;
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    border-radius: 15px;
+    transition: all .3s;
+  }
+
+
+.icons_header button img{
+  width: 42px;
+  background-color: var(--black_tree);
+  font-size: 18px;
+  padding: .5rem;
+  border-radius: 15px;
+}
+
+header.contaiener_header .input-name_header input {
+  border: none;
+  color: var(--color_font);
+  background-color: transparent;
+}
+    .input-name_header input:focus-visible {
+      outline: none;
+    }
+
+    .input-name_header input::placeholder {
+      color: var(--color_font);
+    }
+
 .group-settings_header {
+  width: 100%;
+  align-items: center;
+  display: flex;
   gap: 15px;
+  justify-content: space-between;
 }
 
 .icons_header i {
   padding: .7rem;
-  color: #666666;
-  background-color: #363636;
+  color:  var(--color_font);
+  background-color: var(--black_tree);
   font-size: 18px;
   border-radius: 15px;
 }
-.icons_header img{
+
+.icons_header img {
   width: 40.38px;
   height: auto;
   border-radius: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  header.contaiener_header {
+    top: 0%;
+    right: 0%;
+    width: calc(100% - 75px);
+    padding: 1rem 4.5rem;
+  }
+
+  .input-name_header {
+    padding: 12px 14px;
+    border-radius: 20px;
+    width: 50%;
+  }
+
+  header.contaiener_header .input-name_header input {
+    width: 30vw;
+    font-size: 14px;
+  }
+      .icons_header button:hover{
+        background-color: var(--black_four);
+      }
+        
+  .icons_header i {
+    padding: .65rem;
+  }
+
+  .icons_header img {
+    width: 45px;
+  }
 }

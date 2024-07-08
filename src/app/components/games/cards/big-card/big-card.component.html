@@ -1,0 +1,23 @@
+<div class="body_big-card">
+  <img class="img_big_card" src="assets/images/teste.avif" alt="">
+  <div class="back-overlay_big-card"></div>
+
+  <div class="container-objects_big-card">
+
+    <div class="desc-game_big-card">
+      <h1>The Legend of Zelda</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus perferendis...</p>
+      <button>See more</button>
+    </div>
+
+    <div class="container-listgame_big-card">
+
+      @for(game of games.slice(0,4); track game.id){
+        <small-card [games]="game"> </small-card>
+      }
+    </div>
+  </div>
+
+
+
+</div>

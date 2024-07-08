@@ -1,13 +1,23 @@
-<div class="content-title_home">
-  <h1>Trending</h1>
-</div>
-<br>
+<div class="container_home">
 
-<div class="content-trending_home">
-  <big-card></big-card>
+  <big-card [games]="$games()"></big-card>
 
-  <ng-container *ngIf="isScreenSmall() else bigScreen">
+  <div class="container-gamelist_home">
+
+      <div class="content-trending-more_home">
+        <div class="content-subtitle_home">
+          <h4>More</h4>
+        </div>
+
+        <list-game [games]="$games()"></list-game>
+      </div>
+
+  </div>
+
+  <!--
+    <ng-container *ngIf="isScreenSmall() else bigScreen">
     <div class="control-small-trending_home">
+
       <small-card></small-card>
       <small-card></small-card>
 
@@ -16,22 +26,14 @@
 
   <ng-template #bigScreen>
     <div class="control-small-trending_home">
-      <small-card></small-card>
-      <small-card></small-card>
-      <small-card></small-card>
+
+        <small-card></small-card>
+        <small-card></small-card>
+        <small-card></small-card>
+        <small-card></small-card>
     </div>
   </ng-template>
+  -->
 
-</div>
 
-<div class="content-trending-more_home">
-  <div class="content-subtitle_home">
-    <h4>More</h4>
-  </div>
-  <div class="container-default-card_home">
-    <default-card></default-card>
-    <default-card></default-card>
-    <default-card></default-card>
-    <default-card></default-card>
-  </div>
 </div>

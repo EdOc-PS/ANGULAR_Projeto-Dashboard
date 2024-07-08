@@ -1,0 +1,117 @@
+.body_big-card {
+  position: relative;
+  display: inline-flex;
+  align-items: end;
+  justify-content: start;
+  width: 100%;
+}
+
+.body_big-card .img_big_card {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.back-overlay_big-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, var(--black_one) 0%, #1010144d 70%, #00000000 100%);
+}
+
+.container-objects_big-card {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 .65rem;
+  width: 100%;
+  gap: 20px;
+  bottom: -15%;
+}
+
+.desc-game_big-card {
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+  width: 60%;
+}
+
+    .desc-game_big-card h1 {
+      font-size: 18px;
+      word-wrap: break-word;
+    }
+
+    .desc-game_big-card p {
+      font-size: 12px;
+      word-wrap: break-word;
+    }
+
+    .desc-game_big-card button {
+      border: none;
+      padding: 10px;
+      width: 90%;
+      border-radius: 10px;
+      background-color: #FFFFFF;
+      opacity: .9;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #363636;
+      font-weight: 600;
+    }
+
+.container-listgame_big-card {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  width: 40%;
+}
+
+@media screen and (min-width: 992px) {
+  .body_big-card {
+    height: 550px;
+  }
+
+  .body_big-card .img_big_card {
+    width: 100vw;
+    height: 550px;
+  }
+
+  .back-overlay_big-card {
+    background: linear-gradient(0deg, var(--black_one) 5%, #1010144d 80%, #00000000 100%);
+  }
+
+  .container-objects_big-card {
+    padding: 0 10rem;
+  }
+
+  .desc-game_big-card {
+    width: 50%;
+    gap: 28px;
+    height: 100%;
+    justify-content: end;
+
+  }
+
+  .desc-game_big-card h1 {
+    width: 250px;
+    font-size: 36px;
+  }
+
+  .desc-game_big-card p {
+    width: 320px;
+    font-size: 16px;
+  }
+
+  .desc-game_big-card button {
+    cursor: pointer;
+    font-size: 16px;
+    width: 60%;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .container-listgame_big-card{
+    width: 50%;
+  }
+}

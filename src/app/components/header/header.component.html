@@ -1,11 +1,19 @@
 <header class="contaiener_header">
 
-  <div class="input-name_header">
-    <input type="text" name="" id="" placeholder="Search Games">
-    <i class="fi fi-sr-search"></i>
-  </div>
   <ul class="group-settings_header">
-    <li class="icons_header"><i class="fi fi-sr-bell"></i></li>
-    <li class="icons_header"><img src="assets/images/user.png" alt=""></li>
+     <li class="icons_header">
+      <button (click)="abrirPopUp()">
+        <img src="assets/images/logo/dashbord-tr.png" alt="logo">
+        <i class="fi fi-sr-angle-down"></i>
+      </button>
+
+    </li>
+      <div class="input-name_header">
+          <input type="text" name="" id="" placeholder="Search Games">
+          <i class="fi fi-sr-search"></i>
+      </div>
+
+      <li class="icons_header"><img src="assets/images/user.png" alt=""></li>
   </ul>
+
 </header>
