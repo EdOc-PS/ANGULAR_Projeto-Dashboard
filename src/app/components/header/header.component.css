@@ -65,7 +65,7 @@ header.contaiener_header .input-name_header input {
   width: 100%;
   align-items: center;
   display: flex;
-  gap: 15px;
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -104,7 +104,7 @@ header.contaiener_header .input-name_header input {
       .icons_header button:hover{
         background-color: var(--black_four);
       }
-        
+
   .icons_header i {
     padding: .65rem;
   }

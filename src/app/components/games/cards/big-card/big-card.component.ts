@@ -14,4 +14,12 @@ import { SmallCardComponent } from "../small-card/small-card.component";
 
 export class BigCardComponent {
   @Input({ required: true}) games: Game[] = [];
+
+  newImage: string;
+  newName: string;
+
+  updateBigCard(event: { image: string, name: string }) {
+      this.newImage = event.image;
+      this.newName = event.name;
+  }
 }
