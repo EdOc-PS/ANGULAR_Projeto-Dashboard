@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ListGameComponent } from './components/games/list-game/list-game.component';
+import { GameDetailsComponent } from './pages/game/game-details.component';
+import { GameIdResolver } from './core/resolvers/gameId. resolver';
 export const routes: Routes = [
 
   {
@@ -12,7 +13,10 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: 'account',
-    component: ListGameComponent,
-  },
+    path: 'games/:id',
+    resolve:{
+        game: GameIdResolver,
+    },
+    component: GameDetailsComponent,
+  }
 ];

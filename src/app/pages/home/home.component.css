@@ -1,4 +1,6 @@
-.container_home {}
+.container_home {
+
+}
 
 .container-gamelist_home {
   margin-top: 4rem;
@@ -8,7 +10,7 @@
 .content-trending-more_home {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 @media screen and (min-width: 992px) {

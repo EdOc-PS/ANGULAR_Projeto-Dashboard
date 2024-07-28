@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgIf } from '@angular/common';
-import { RAWGService } from '../../core/services/rawg.service';
+import { GameService } from '../../core/services/game.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ListGameComponent } from '../../components/games/list-game/list-game.component';
 import { BigCardComponent } from '../../components/games/cards/big-card/big-card.component';
@@ -13,8 +13,8 @@ import { BigCardComponent } from '../../components/games/cards/big-card/big-card
 })
 
 export class HomeComponent implements OnInit {
-  $games = this.rawgService.$games;
-  constructor(private rawgService: RAWGService) {
+  $games = this.gameService.$games;
+  constructor(private gameService: GameService) {
     this.getGamesRegistered()
   }
 
@@ -30,6 +30,6 @@ export class HomeComponent implements OnInit {
   }
 
   getGamesRegistered() {
-    this.rawgService.searchGames().subscribe(gameData => this.rawgService.setGames(gameData.results))
+    this.gameService.searchGames().subscribe(gameData => this.gameService.setGames(gameData.results))
   }
 }

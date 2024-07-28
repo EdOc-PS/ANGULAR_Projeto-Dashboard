@@ -8,20 +8,22 @@ import { Game, SearchResult } from "../models/games.model";
   providedIn: 'root'
 })
 
-export class RAWGService {
+export class  GameService {
 
   $games: WritableSignal<Game[]> = signal([]);
-
-  private url = environment.api;
 
   constructor(private httpClient: HttpClient){
   }
 
  searchGames(): Observable<SearchResult>{
-    return this.httpClient.get<SearchResult>(this.url + 'games')
+    return this.httpClient.get<SearchResult>(environment.api + 'games')
   }
 
   setGames(game: Game[]) : void{
     this.$games.set(game);
+  }
+
+  getGameById(id:string){
+    return this.httpClient.get<Game>(environment.api + "games/" + id)
   }
 }

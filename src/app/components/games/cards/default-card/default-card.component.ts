@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { Game } from '../../../../core/models/games.model';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'default-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './default-card.component.html',
   styleUrl: './default-card.component.css'
 })

@@ -27,6 +27,7 @@ export interface Game {
   platforms: Platform[]
 }
 
+
 export interface Ratings {}
 
 export interface AddedByStatus {}
