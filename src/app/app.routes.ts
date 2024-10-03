@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { GameDetailsComponent } from './pages/game/game-details.component';
-import { GameIdResolver } from './core/resolvers/gameId. resolver';
+import { GameDetailsPage } from './pages/game/game-page.component';
+import { GameIdResolver } from './core/resolvers/game-id_resolver';
 export const routes: Routes = [
 
   {
@@ -17,6 +17,6 @@ export const routes: Routes = [
     resolve:{
         game: GameIdResolver,
     },
-    component: GameDetailsComponent,
+    component: GameDetailsPage,
   }
 ];

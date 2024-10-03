@@ -7,18 +7,14 @@
     <div class="desc-game_big-card">
       <h1>{{newName}}</h1>
       <p></p>
-      <button>See more</button>
+      <button><p>See more </p><i class="fi fi-sr-play"></i></button>
     </div>
 
     <div class="container-listgame_big-card">
-
-      @for(game of games.slice(0,4); track game.id){
+      @for(game of games.slice(0,5); track game.id){
         <small-card (imageClicked)="updateBigCard($event)" [games]="game"> </small-card>
       }
     </div>
 
   </div>
-
-
-
 </div>

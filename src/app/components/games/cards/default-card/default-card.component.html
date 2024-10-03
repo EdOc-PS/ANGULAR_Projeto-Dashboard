@@ -1,9 +1,8 @@
 <a [routerLink]="['/games', games.id]" class="body_default-card">
 
-    <img class= "img_default-card" [src]="games.background_image" alt="">
-
-  <div class= "desc-game_default-card">
-    <h1>{{games.name}}</h1>
+  <img class="img_default-card" [src]="games.background_image" alt="">
+  <div class="desc-game_default-card">
+    <p>{{games.name}}</p>
 
     <!--
      <div class= "another-info-game_default-card">

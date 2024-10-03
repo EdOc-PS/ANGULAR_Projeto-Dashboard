@@ -1,7 +1,6 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { Game } from '../../../core/models/games.model';
 import { DefaultCardComponent } from '../cards/default-card/default-card.component';
-
 
 @Component({
   selector: 'list-game',
@@ -12,5 +11,20 @@ import { DefaultCardComponent } from '../cards/default-card/default-card.compone
   styleUrl: './list-game.component.css'
 })
 export class ListGameComponent {
-    @Input({ required: true}) games: Game[] = [];
+  @Input({ required: true }) games: Game[] = [];
+  @ViewChild('containerScroll', { static: true }) containerScroll!: ElementRef
+
+  moveLeft() {
+    this.containerScroll.nativeElement.scrollBy({
+      left: -1230,
+    })
+
+  }
+  moveRight() {
+    this.containerScroll.nativeElement.scrollBy({
+      left: 1230,
+    })
+  }
+
+
 }

@@ -11,7 +11,7 @@ header.contaiener_header {
   padding: 10px 12px;
   width: 100%;
   display: flex;
-  background-color: var(--black_tree);
+  background-color: var(--black_one);
   align-items: center;
   justify-content: space-between;
   gap: .5rem;
@@ -23,26 +23,26 @@ header.contaiener_header {
   font-size: 16px;
 }
 
-.icons_header:first-child i{
+.icons_header:first-child i {
   font-size: 10px;
   color: #FFF;
   background-color: transparent;
 }
 
-  .icons_header a{
-    background-color: transparent;
-    border: 0;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
-    border-radius: 15px;
-    transition: all .3s;
-  }
+.icons_header a {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  border-radius: 15px;
+  transition: all .3s;
+}
 
 
-.icons_header a img{
+.icons_header a img {
   width: 42px;
-  background-color: var(--black_tree);
+  background-color: var(--black_one);
   font-size: 18px;
   padding: .5rem;
   border-radius: 15px;
@@ -53,13 +53,14 @@ header.contaiener_header .input-name_header input {
   color: var(--color_font);
   background-color: transparent;
 }
-    .input-name_header input:focus-visible {
-      outline: none;
-    }
 
-    .input-name_header input::placeholder {
-      color: var(--color_font);
-    }
+.input-name_header input:focus-visible {
+  outline: none;
+}
+
+.input-name_header input::placeholder {
+  color: var(--color_font);
+}
 
 .group-settings_header {
   width: 100%;
@@ -71,7 +72,7 @@ header.contaiener_header .input-name_header input {
 
 .icons_header i {
   padding: .7rem;
-  color:  var(--color_font);
+  color: var(--color_font);
   background-color: var(--black_tree);
   font-size: 18px;
   border-radius: 15px;
@@ -87,32 +88,35 @@ header.contaiener_header .input-name_header input {
   header.contaiener_header {
     top: 0%;
     width: 100%;
-    padding: 1rem 9rem;
+    padding: 1rem 6rem;
   }
 
   .input-name_header {
     padding: 12px 14px;
-    border-radius: 20px;
-    width: 50%;
+    border-radius: 10px;
+    width: 40%;
+
+    input {
+    width: 100%;
+      font-size: 12px;
+    }
   }
 
-  header.contaiener_header .input-name_header input {
-    width: 30vw;
-    font-size: 14px;
+  .icons_header {
+    button {
+      cursor: pointer;
+    }
+
+    i {
+      padding: .65rem;
+    }
+
+    img {
+      width: 45px;
+    }
   }
 
-  .icons_header button{
-    cursor: pointer;
-  }
-      .icons_header button:hover{
-        background-color: var(--black_four);
-      }
-
-  .icons_header i {
-    padding: .65rem;
-  }
-
-  .icons_header img {
-    width: 45px;
+  .icons_header .icons_header button:hover {
+    background-color: var(--black_four);
   }
 }

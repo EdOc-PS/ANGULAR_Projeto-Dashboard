@@ -8,22 +8,19 @@ import { Game, SearchResult } from "../models/games.model";
   providedIn: 'root'
 })
 
-export class  GameService {
+export class GameService {
 
   $games: WritableSignal<Game[]> = signal([]);
 
-  constructor(private httpClient: HttpClient){
+  constructor(private httpClient: HttpClient) {
   }
 
- searchGames(): Observable<SearchResult>{
+  searchGames(): Observable<SearchResult> {
     return this.httpClient.get<SearchResult>(environment.api + 'games')
   }
 
-  setGames(game: Game[]) : void{
+  setGames(game: Game[]): void {
     this.$games.set(game);
   }
 
-  getGameById(id:string){
-    return this.httpClient.get<Game>(environment.api + "games/" + id)
-  }
 }

@@ -1,7 +1,14 @@
 <div class="list_container">
-  @for(game of games.slice(0,10); track game.id){
+
+  <button (click) = "moveLeft()" class="btn_arrow"><i class="fi fi-sr-angle-left"></i></button>
+  
+
+  <div #containerScroll class="cards_container">
+    @for(game of games.slice(0,12); track game.id){
 
     <default-card [games]="game"> </default-card>
+    }
+  </div>
 
-  }
+  <button (click) = "moveRight()" class="btn_arrow"><i class="fi fi-sr-angle-right"></i></button>
 </div>

@@ -1,23 +1,34 @@
+.body_default-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
 .img_default-card {
-  width: 200px;
-  height: 230px;
-  border-radius: 10px;
+  width: 185px;
+  height: 245px;
+  transition: 300ms ease;
+  border-radius: 8px;
   object-fit: cover;
 
 }
 
 .desc-game_default-card {
-  padding: .25rem .35rem;
-  width: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+  p {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFF;
+  }
 }
 
-.desc-game_default-card h1 {
-  font-size: 14px;
-  color: var(--color_font);
-}
 
 .another-info-game_default-card {
   display: flex;
@@ -26,31 +37,13 @@
   font-size: 10px;
 }
 
-@media screen and (min-width: 992px) {
+.body_default-card:hover .img_default-card{
+  transform: translateY( -3px);
+}
+
+
+@media (max-width: 1200px) {
   .body_default-card {
-
-    cursor: pointer;
-  }
-
-  .img_default-card {
-    border: 2px solid transparent;
-    width: 200px;
-    height: 260px;
-    transition: 300ms ease;
-  }
-
-  .body_default-card:hover .img_default-card {
-    transform: translateY(-5px);
-    border: 2px solid #ffffff52;
-  }
-
-
-
-  .desc-game_default-card h1 {
-    font-size: 16px;
-  }
-
-  .another-info-game_default-card {
-    font-size: 12px;
+    flex: 1 1 30%;
   }
 }

@@ -1,22 +1,28 @@
-.container_home {
-
-}
-
 .container-gamelist_home {
-  margin-top: 4rem;
-  padding: .8rem;
+  padding: 2rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .content-trending-more_home {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 71.5%;
 }
 
-@media screen and (min-width: 992px) {
-  .container-gamelist_home {
-    margin-top: 15vh;
-    padding: 2rem 10rem;
+
+
+.content-title_home {
+  display: flex;
+  gap: 25px;
+
+  i {
+    font-size: 16px;
   }
 
 }

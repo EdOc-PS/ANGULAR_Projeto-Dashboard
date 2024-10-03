@@ -4,15 +4,13 @@ import { environment } from "../../../environments/environment";
 import { GameDetails } from "../models/gamesDetails.model";
 import { Observable } from "rxjs";
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 
 export class GameDetailsService {
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private httpClient: HttpClient) { }
 
   getGameById(id: number): Observable<GameDetails> {
-    console.log("tes");
     return this.httpClient.get<GameDetails>(environment.api + "games/" + id)
-
   }
 }
